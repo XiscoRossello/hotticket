@@ -51,7 +51,7 @@ export default function BackofficeDashboard() {
 
     let totalOrders = 0
     let totalRevenue = 0
-    let totalDrinks = 0
+    let totalTickets = 0
 
     if (eventIds.length > 0) {
       const { data: orders } = await supabase
@@ -63,19 +63,19 @@ export default function BackofficeDashboard() {
       totalOrders = orders?.length || 0
       totalRevenue = orders?.reduce((sum, o) => sum + Number(o.total), 0) || 0
 
-      const { count: drinksCount } = await supabase
+      const { count: ticketsCount } = await supabase
         .from('wallet_items')
         .select('*', { count: 'exact', head: true })
         .in('event_id', eventIds)
-    
-      totalDrinks = drinksCount || 0
+
+      totalTickets = ticketsCount || 0
     }
 
     setStats({
       totalProducts: productsCount || 0,
       totalEvents: eventsCount || 0,
       totalOrders,
-      totalTicketsSold: totalDrinks,
+      totalTicketsSold: totalTickets,
       revenue: totalRevenue,
     })
     setLoading(false)

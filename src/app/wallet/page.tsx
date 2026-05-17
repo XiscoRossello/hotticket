@@ -140,7 +140,7 @@ export default function WalletPage() {
           </div>
         </div>
 
-        {/* Drinks by event */}
+        {/* Tickets by event */}
         {walletItems.length === 0 ? (
           <div className="text-center py-12 bg-surface rounded-2xl border border-border space-y-4">
             <div className="text-6xl">🎫</div>

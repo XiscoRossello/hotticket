@@ -1,5 +1,5 @@
 -- =============================================
--- KOPEO - Database Schema Migration
+-- HotTicket - Database Schema Migration
 -- =============================================
 
 -- Enable required extensions
@@ -64,7 +64,7 @@ CREATE TABLE events (
 );
 
 -- =============================================
--- PRODUCTS (DRINKS) TABLE
+-- PRODUCTS (TICKETS / ENTRY TYPES) TABLE
 -- =============================================
 CREATE TABLE products (
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
@@ -117,7 +117,7 @@ CREATE TABLE order_items (
 );
 
 -- =============================================
--- WALLET TABLE (stores user's purchased drinks)
+-- WALLET TABLE (stores user's purchased tickets)
 -- =============================================
 CREATE TABLE wallet_items (
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),

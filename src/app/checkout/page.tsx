@@ -78,7 +78,7 @@ export default function CheckoutPage() {
           <div className="text-6xl">🛒</div>
           <h2 className="text-2xl font-bold">Tu carrito está vacío</h2>
           <p className="text-gray-500">
-            Explora los eventos disponibles y añade bebidas a tu carrito.
+            Explora los eventos disponibles y añade entradas a tu carrito.
           </p>
           <Link
             href="/"
@@ -122,7 +122,7 @@ export default function CheckoutPage() {
                 />
               ) : (
                 <div className="w-16 h-16 rounded-xl gradient-primary flex items-center justify-center text-2xl">
-                  🍹
+                  🎫
                 </div>
               )}
               <div className="flex-1 min-w-0">

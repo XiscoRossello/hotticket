@@ -1,6 +1,6 @@
-# 🚀 Guia d'Instal·lació i Configuració - Kopeo
+# 🚀 Guia d'Instal·lació i Configuració - HotTicket
 
-**Projecte:** Kopeo - Plataforma de Gestió de Tiquets de Begudes  
+**Projecte:** HotTicket - Plataforma de Gestió de Tiquets de Begudes  
 **Autors:** Francisco Javier Rosselló Jerónimo, Ferran Azpiazu Adrover  
 **Data:** 7 de febrer de 2026  
 **Versió:** 1.0 - UD1A
@@ -61,10 +61,10 @@ git --version
 
 ```bash
 # Clonar el repositori
-git clone https://github.com/XiscoRossello/Kopeo.git
+git clone https://github.com/XiscoRossello/HotTicket.git
 
 # Entrar a la carpeta del projecte
-cd Kopeo
+cd HotTicket
 ```
 
 ### Pas 2: Instal·lar Dependències
@@ -122,7 +122,7 @@ NEXT_PUBLIC_APP_URL=http://localhost:3000
 3. Inicia sessió amb GitHub o un compte de correu
 4. Crea una nova organització (si és la primera vegada)
 5. Crea un nou projecte:
-   - **Name:** kopeo (o el nom que prefereixis)
+   - **Name:** hotticket (o el nom que prefereixis)
    - **Database Password:** (guarda-la, la necessitaràs)
    - **Region:** Europe West (London) o Europe Central (Frankfurt)
    - Fes clic a "Create new project"
@@ -468,7 +468,7 @@ Vercel és la plataforma recomanada per a projectes Next.js.
 #### Pas 2: Importar Projecte
 
 1. Fes clic a **New Project**
-2. Selecciona el repositori `Kopeo`
+2. Selecciona el repositori `HotTicket`
 3. Configura les variables d'entorn:
    - Afegeix totes les variables del `.env.local`
    - ⚠️ Assegura't d'afegir `SUPABASE_SERVICE_ROLE_KEY`
@@ -695,7 +695,7 @@ Si tens qualsevol problema no resolt en aquesta guia:
    - Ferran Azpiazu
 
 3. **Revisa els Issues a GitHub:**
-   - [github.com/XiscoRossello/Kopeo/issues](https://github.com/XiscoRossello/Kopeo/issues)
+   - [github.com/XiscoRossello/HotTicket/issues](https://github.com/XiscoRossello/HotTicket/issues)
 
 ---
 

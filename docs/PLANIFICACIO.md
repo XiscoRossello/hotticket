@@ -11,7 +11,7 @@
 
 ## 📊 Resum Executiu
 
-Aquest document presenta la revisió i ajust de la planificació inicial del projecte Kopeo, així com l'estat actual del desenvolupament en la fase UD1A. Kopeo és una plataforma web per a la gestió i compra de tiquets de begudes en esdeveniments i locals d'oci nocturn.
+Aquest document presenta la revisió i ajust de la planificació inicial del projecte HotTicket, així com l'estat actual del desenvolupament en la fase UD1A. HotTicket és una plataforma web per a la gestió i compra de tiquets de begudes en esdeveniments i locals d'oci nocturn.
 
 ---
 
@@ -192,7 +192,7 @@ Durant gener i febrer s'ha treballat intensivament en les funcionalitats core de
 
 **Estructura del projecte:**
 ```
-kopeo/
+hotticket/
 ├── src/
 │   ├── app/              # Pàgines (Next.js App Router)
 │   ├── components/       # Components reutilitzables
@@ -337,7 +337,7 @@ Panell d'administració per a comercios on poden gestionar els seus esdeveniment
 
 ### 4. GitHub i Control de Versions
 
-**Repositori:** [https://github.com/XiscoRossello/Kopeo](https://github.com/XiscoRossello/Kopeo)
+**Repositori:** [https://github.com/XiscoRossello/HotTicket](https://github.com/XiscoRossello/HotTicket)
 
 **Estadístiques:**
 - Commits realitzats: 50+
@@ -456,15 +456,15 @@ La desviació del +8% és acceptable i es deu principalment a:
 - Miquel Antoni Capellà Arrom - CIFP Francesc de Borja Moll
 
 **Enllaços del Projecte:**
-- 🌐 Aplicació: [https://kopeo.vercel.app](https://kopeo.vercel.app)
-- 💻 GitHub: [https://github.com/XiscoRossello/Kopeo](https://github.com/XiscoRossello/Kopeo)
+- 🌐 Aplicació: [https://hotticket.vercel.app](https://hotticket.vercel.app)
+- 💻 GitHub: [https://github.com/XiscoRossello/HotTicket](https://github.com/XiscoRossello/HotTicket)
 - 📋 Trello: [Enllaç al tauler compartit amb el tutor]
 
 ---
 
 **Conclusió:**
 
-El projecte Kopeo es troba en bon estat de desenvolupament per a la fase UD1A. S'han complert tots els requisits establerts: arrencada del desenvolupament, configuració de l'entorn, implementació de funcionalitats bàsiques, gestió adequada del projecte i inici de la documentació tècnica.
+El projecte HotTicket es troba en bon estat de desenvolupament per a la fase UD1A. S'han complert tots els requisits establerts: arrencada del desenvolupament, configuració de l'entorn, implementació de funcionalitats bàsiques, gestió adequada del projecte i inici de la documentació tècnica.
 
 Les desviacions detectades respecte la planificació inicial són lleus (+8% en temps) i no comprometen la data d'entrega final. Els ajustos realitzats han millorat la qualitat del projecte i la gestió del mateix.
 

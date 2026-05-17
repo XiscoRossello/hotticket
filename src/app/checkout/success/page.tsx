@@ -25,7 +25,7 @@ function SuccessContent() {
         </div>
         <h1 className="text-3xl font-bold">¡Pago completado!</h1>
         <p className="text-gray-400">
-          Tu compra se ha procesado correctamente. Las bebidas ya están disponibles en tu cartera.
+          Tu compra se ha procesado correctamente. Tus entradas ya están disponibles en tu cartera.
         </p>
         <div className="pt-4 space-y-3">
           <Link

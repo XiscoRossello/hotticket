@@ -1,6 +1,6 @@
 export type UserRole = 'client' | 'commerce' | 'admin'
 export type OrderStatus = 'pending' | 'paid' | 'cancelled'
-export type WalletDrinkStatus = 'available' | 'redeemed'
+export type WalletItemStatus = 'available' | 'redeemed'
 
 export interface Profile {
   id: string
@@ -98,7 +98,7 @@ export interface WalletItem {
   order_id: string
   product_id: string
   event_id: string
-  status: WalletDrinkStatus
+  status: WalletItemStatus
   redeemed_at: string | null
   redeemed_by: string | null
   created_at: string

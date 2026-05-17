@@ -97,7 +97,7 @@ export default function ProductsPage() {
       <div className="flex items-center justify-between">
         <div>
           <h1 className="text-2xl font-bold">Productos</h1>
-          <p className="text-gray-500">Gestiona tu catálogo de bebidas</p>
+          <p className="text-gray-500">Gestiona tu catálogo de entradas y productos</p>
         </div>
         <button
           onClick={() => { setEditingProduct(null); setShowModal(true) }}
@@ -131,7 +131,7 @@ export default function ProductsPage() {
                 />
               ) : (
                 <div className="w-full h-32 gradient-primary flex items-center justify-center text-4xl">
-                  🍹
+                  🎫
                 </div>
               )}
               <div className="p-4 space-y-2">
@@ -237,7 +237,7 @@ function ProductModal({
               onChange={(e) => setName(e.target.value)}
               required
               className="w-full px-4 py-3 bg-background border border-border rounded-xl text-foreground placeholder-gray-500 focus:outline-none focus:border-primary transition-colors"
-              placeholder="Ej: Mojito"
+              placeholder="Ej: Entrada General"
             />
           </div>
 
@@ -273,7 +273,7 @@ function ProductModal({
                 value={category}
                 onChange={(e) => setCategory(e.target.value)}
                 className="w-full px-4 py-3 bg-background border border-border rounded-xl text-foreground placeholder-gray-500 focus:outline-none focus:border-primary transition-colors"
-                placeholder="Ej: Cócteles"
+                placeholder="Ej: VIP, General, Reducida..."
               />
             </div>
           </div>

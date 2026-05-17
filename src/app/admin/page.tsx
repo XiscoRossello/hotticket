@@ -2,7 +2,7 @@
 
 import { useEffect, useState, useCallback, useMemo } from 'react'
 import { createClient } from '@/lib/supabase/client'
-import { Users, Store, CalendarDays, Package, ShoppingCart, Wine, TrendingUp, Loader2 } from 'lucide-react'
+import { Users, Store, CalendarDays, Package, ShoppingCart, Ticket, TrendingUp, Loader2 } from 'lucide-react'
 
 interface Stats {
   totalUsers: number
@@ -72,7 +72,7 @@ export default function AdminDashboard() {
     { label: 'Eventos', value: stats?.totalEvents || 0, icon: CalendarDays, color: 'bg-accent/20', iconColor: 'text-accent' },
     { label: 'Productos', value: stats?.totalProducts || 0, icon: Package, color: 'bg-primary/20', iconColor: 'text-primary-light' },
     { label: 'Pedidos', value: stats?.totalOrders || 0, icon: ShoppingCart, color: 'bg-green-500/20', iconColor: 'text-green-500' },
-    { label: 'Bebidas vendidas', value: stats?.totalWalletItems || 0, icon: Wine, color: 'bg-pink-500/20', iconColor: 'text-pink-500' },
+    { label: 'Entradas vendidas', value: stats?.totalWalletItems || 0, icon: Ticket, color: 'bg-pink-500/20', iconColor: 'text-pink-500' },
   ]
 
   return (

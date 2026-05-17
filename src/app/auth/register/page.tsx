@@ -3,9 +3,8 @@
 import { useState, useMemo } from 'react'
 import { useRouter } from 'next/navigation'
 import { createClient } from '@/lib/supabase/client'
-import { Mail, Lock, User, Loader2, Eye, EyeOff, Building } from 'lucide-react'
+import { Mail, Lock, User, Loader2, Eye, EyeOff, Building, Ticket } from 'lucide-react'
 import Link from 'next/link'
-import Image from 'next/image'
 
 export default function RegisterPage() {
   const [email, setEmail] = useState('')
@@ -55,13 +54,9 @@ export default function RegisterPage() {
       <div className="w-full max-w-sm space-y-8 animate-fade-in">
         {/* Logo */}
         <div className="text-center">
-          <Image
-            src="/logo-sin-fondo.png"
-            alt="HotTicket"
-            width={60}
-            height={60}
-            className="mx-auto"
-          />
+          <div className="w-16 h-16 mx-auto rounded-2xl gradient-primary flex items-center justify-center shadow-lg shadow-primary/20">
+            <Ticket className="text-white" size={32} />
+          </div>
           <h1 className="mt-4 text-2xl font-bold">Crear cuenta</h1>
           <p className="text-gray-500 text-sm mt-1">Únete a HotTicket hoy</p>
         </div>
@@ -79,7 +74,7 @@ export default function RegisterPage() {
           >
             <User className={`mx-auto mb-2 ${role === 'client' ? 'text-accent' : 'text-gray-500'}`} size={24} />
             <p className={`text-sm font-medium ${role === 'client' ? 'text-accent' : ''}`}>Cliente</p>
-            <p className="text-xs text-gray-500">Compra bebidas</p>
+            <p className="text-xs text-gray-500">Compra entradas</p>
           </button>
           <button
             type="button"
@@ -92,7 +87,7 @@ export default function RegisterPage() {
           >
             <Building className={`mx-auto mb-2 ${role === 'commerce' ? 'text-primary-light' : 'text-gray-500'}`} size={24} />
             <p className={`text-sm font-medium ${role === 'commerce' ? 'text-primary-light' : ''}`}>Comercio</p>
-            <p className="text-xs text-gray-500">Vende bebidas</p>
+            <p className="text-xs text-gray-500">Vende entradas</p>
           </button>
         </div>
 

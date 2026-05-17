@@ -1,11 +1,11 @@
 <div align="center">
 
-# 🍸 Kopeo
+# 🎟️ HotTicket
 
-### *Revolucionant la gestió de tiquets de begudes en l'oci nocturn*
+### *Compra tu entrada, vive el momento*
 
-[![Estat](https://img.shields.io/badge/Estat-En%20Desenvolupament-yellow)](https://github.com/XiscoRossello/Kopeo)
-[![Versió](https://img.shields.io/badge/Versió-1.0.0-blue)](https://github.com/XiscoRossello/Kopeo)
+[![Estat](https://img.shields.io/badge/Estat-En%20Desenvolupament-yellow)](https://github.com/XiscoRossello/hotticket)
+[![Versió](https://img.shields.io/badge/Versió-1.0.0-blue)](https://github.com/XiscoRossello/hotticket)
 [![Llicència](https://img.shields.io/badge/Llicència-MIT-green)](LICENSE)
 [![Next.js](https://img.shields.io/badge/Next.js-16-black)](https://nextjs.org/)
 [![Supabase](https://img.shields.io/badge/Supabase-PostgreSQL-3ECF8E)](https://supabase.com/)
@@ -16,25 +16,29 @@
 
 ## 📖 Descripció del Projecte
 
-**Kopeo** és una aplicació web dissenyada per revolucionar la gestió de tiquets de begudes en l'àmbit de l'oci nocturn i els esdeveniments.
+**HotTicket** és una plataforma web per a la **venda i gestió d'entrades d'esdeveniments**. Permet als usuaris descobrir events propers, comprar les seves entrades al moment i accedir ràpidament al recinte amb un codi QR. Els organitzadors poden gestionar els seus eventos, veure estadístiques de venda i escanejar entrades en temps real.
 
 ### 🎭 El Problema
 
-En discoteques, festivals i festes privades, els assistents sovint s'enfronten a **llargues cues** per adquirir begudes, cosa que genera incomoditat i dificulta la gestió de l'estoc als organitzadors.
+Els organitzadors d'events (discoteques, festivals, concerts, festes privades) necessiten una forma àgil de **vendre entrades anticipades** i **controlar l'accés** al recinte sense cues ni efectiu. Els assistents, d'altra banda, volen comprar la seva entrada en segons des del mòbil.
 
 ### 💡 La Solució
 
-Kopeo soluciona aquest problema permetent la **compra anticipada de tiquets de begudes** directament des del mòbil. L'aplicació integra un sistema de pagament segur i genera un **codi QR únic** que es pot escanejar a la barra per bescanviar la beguda de forma ràpida i sense efectiu.
+HotTicket connecta organitzadors i assistents en una sola plataforma:
+
+- **Assistents** descobreixen events propers per geolocalització, compren entrades amb uns pocs clics i les guarden a la seva cartera digital com a codi QR personal.
+- **Organitzadors** (rol *commerce*) gestionen els seus events i productes des d'un backoffice, escanegen les entrades a l'entrada del recinte, i visualitzen on s'han escanejat les entrades en un mapa de calor.
+- **Admins** gestionen la totalitat de la plataforma: usuaris, comercis, events, productes i comandes.
 
 ---
 
 ## 🚧 Estat Actual
 
-> **Fase actual:** Desenvolupament Avançat (Febrer 2026)
+> **Fase actual:** Desenvolupament Avançat (Maig 2026)
 
 | Aspecte | Detall |
 |---------|--------|
-| 📌 Versió | 1.0.0 - Febrer 2026 |
+| 📌 Versió | 1.0.0 - Maig 2026 |
 | ⚙️ Progrés | Plataforma funcional amb totes les característiques principals implementades |
 | 🚀 Desplegament | Vercel + Supabase |
 | 🧪 Mode Test | Simulació de pagaments sense Stripe configurat |
@@ -49,42 +53,43 @@ Kopeo soluciona aquest problema permetent la **compra anticipada de tiquets de b
 - ✅ Perfils d'usuari amb rols (client, commerce, admin)
 - ✅ Historial de compres
 
-### 🔍 Exploració d'Esdeveniments
-- ✅ Pàgina principal amb descobriment d'esdeveniments
-- ✅ Geolocalització per trobar esdeveniments propers
-- ✅ Cerca i filtres d'esdeveniments
-- ✅ Informació detallada de cada esdeveniment
+### 🔍 Descobriment d'Esdeveniments
+- ✅ Pàgina principal amb llistat d'events actius
+- ✅ Geolocalització per mostrar events propers
+- ✅ Cerca d'events per nom, adreça o organitzador
+- ✅ Informació detallada de cada event (data, ubicació, imatge)
 
-### 🎟️ Compra de Tiquets
-- ✅ Selecció de begudes amb quantitats
+### 🎟️ Compra d'Entrades
+- ✅ Selecció de tipus d'entrada amb quantitats
 - ✅ Carret de compra persistent (Zustand)
 - ✅ Checkout integrat amb Stripe (o mode simulació)
-- ✅ Generació automàtica de codis QR
+- ✅ Confirmació de pagament instantània
 
-### 📱 Wallet Digital
-- ✅ Visualització de begudes comprades
-- ✅ Codis QR únics per cada beguda
-- ✅ Agrupació per esdeveniments
-- ✅ Estat de bescanvi (disponible/bescanviat)
+### 📱 Cartera Digital
+- ✅ Codi QR personal únic per usuari
+- ✅ Visualització de totes les entrades comprades
+- ✅ Agrupació d'entrades per event
+- ✅ Estat de les entrades (disponible / bescanviada)
 
-### 🔍 Escàner QR per Comercis
-- ✅ Escaneig de codis QR amb la càmera
-- ✅ Validació de tiquets en temps real
-- ✅ Bescanvi de begudes selectives
+### 🔍 Escàner QR per a Organitzadors
+- ✅ Escaneig de codis QR amb la càmera del dispositiu
+- ✅ Validació d'entrades en temps real
+- ✅ Marcatge d'entrades com a bescanviades
 - ✅ Historial de bescanvis
 
-### 🎛️ Panell per a Comercis (Backoffice)
-- ✅ Gestió de productes (CRUD complet)
-- ✅ Gestió d'esdeveniments
-- ✅ Configuració del comerç
-- ✅ Dashboard amb estadístiques
+### 🎛️ Backoffice per a Organitzadors
+- ✅ Gestió de productes/entrades (CRUD complet)
+- ✅ Gestió d'esdeveniments (CRUD complet)
+- ✅ Configuració del comerç (nom, logo, adreça, coordenades)
+- ✅ Dashboard amb estadístiques de venda
+- ✅ **Mapa de calor** — visualitza on s'han escanejat les entrades al recinte en temps real
 
 ### 🛡️ Panell d'Administració
 - ✅ Gestió d'usuaris i rols
 - ✅ Gestió de comercis
 - ✅ Gestió d'esdeveniments
 - ✅ Gestió de productes
-- ✅ Historial de comandes
+- ✅ Historial de comandes global
 - ✅ Dashboard amb mètriques globals
 
 ---
@@ -100,6 +105,7 @@ Kopeo soluciona aquest problema permetent la **compra anticipada de tiquets de b
 | **Lucide React** | Biblioteca d'icones |
 | **html5-qrcode** | Escaneig de codis QR |
 | **qrcode** | Generació de codis QR |
+| **Leaflet + Leaflet.heat** | Mapes interactius i mapa de calor |
 
 ### Backend
 | Tecnologia | Descripció |
@@ -131,34 +137,36 @@ src/
 │   │   ├── products/       # Gestió de productes
 │   │   └── orders/         # Historial de comandes
 │   ├── api/
-│   │   ├── checkout/       # API de checkout
+│   │   ├── checkout/       # API de checkout (Stripe)
 │   │   └── webhook/        # Webhook de Stripe
 │   ├── auth/
 │   │   ├── login/          # Pàgina de login
 │   │   ├── register/       # Pàgina de registre
 │   │   └── callback/       # Callback OAuth
-│   ├── backoffice/         # Panell de comerci
-│   │   ├── products/       # CRUD productes
+│   ├── backoffice/         # Panell de l'organitzador
+│   │   ├── products/       # CRUD tipus d'entrades
 │   │   ├── events/         # CRUD esdeveniments
-│   │   └── commerce/       # Configuració
+│   │   ├── commerce/       # Configuració del comerç
+│   │   └── heatmap/        # Mapa de calor d'escaneos
 │   ├── checkout/           # Procés de pagament
 │   │   ├── success/        # Pagament exitós
 │   │   └── cancel/         # Pagament cancel·lat
-│   ├── event/[id]/         # Detall d'esdeveniment
-│   ├── scanner/            # Escàner QR
-│   ├── wallet/             # Cartera digital
-│   └── page.tsx            # Home
+│   ├── event/[id]/         # Detall d'esdeveniment + compra
+│   ├── scanner/            # Escàner QR d'entrades
+│   ├── wallet/             # Cartera digital de l'usuari
+│   └── page.tsx            # Home — descobriment d'events
 ├── components/
 │   ├── Navbar.tsx          # Navegació
 │   ├── CartDrawer.tsx      # Carret lateral
+│   ├── HeatmapClient.tsx   # Component de mapa de calor
 │   └── LoadingSpinner.tsx  # Spinner de càrrega
 ├── lib/
-│   ├── supabase/           # Clients Supabase
+│   ├── supabase/           # Clients Supabase (browser + server)
 │   ├── stripe.ts           # Configuració Stripe
 │   └── types.ts            # Tipus TypeScript
 ├── store/
-│   └── cart.ts             # Store Zustand
-└── middleware.ts           # Middleware d'auth
+│   └── cart.ts             # Store Zustand del carret
+└── middleware.ts           # Middleware d'autenticació
 ```
 
 ---
@@ -174,8 +182,8 @@ src/
 
 1. **Clona el repositori:**
 ```bash
-git clone https://github.com/XiscoRossello/Kopeo.git
-cd kopeo
+git clone https://github.com/XiscoRossello/hotticket.git
+cd hotticket
 npm install
 ```
 
@@ -213,12 +221,28 @@ Quan `STRIPE_SECRET_KEY` no està configurat o té el valor per defecte, l'aplic
 
 - Els pagaments es processen instantàniament
 - No cal introduir dades de targeta
-- Les begudes s'afegeixen directament a la wallet
+- Les entrades s'afegeixen directament a la cartera digital
 - Perfecte per a proves i desenvolupament
 
 ---
 
+## 🔑 Comptes de Prova
+
+Pots utilitzar els següents comptes per provar l'aplicació sense necessitat de registrar-te:
+
+| Rol | Email | Contrasenya | Accés |
+|-----|-------|-------------|-------|
+| 👤 **Client** | `user@hotticket.app` | `password123` | Descobrir events, comprar entrades, cartera digital |
+| 🏪 **Commerce** | `commerce@hotticket.app` | `password123` | Tot el d'anterior + backoffice, escàner QR, mapa de calor |
+| 🛡️ **Admin** | `admin@hotticket.app` | `password123` | Accés total a la plataforma |
+
+> [!NOTE]
+> Els pagaments funcionen en **mode simulació** — no cal cap targeta de crèdit real per provar el flux de compra complet.
+
+---
+
 ## 🎨 Paleta de Colors
+
 
 | Color | Hex | Ús |
 |-------|-----|-----|
@@ -236,8 +260,8 @@ Quan `STRIPE_SECRET_KEY` no està configurat o té el valor per defecte, l'aplic
 
 | Rol | Permisos |
 |-----|----------|
-| **client** | Veure esdeveniments, comprar begudes, usar wallet |
-| **commerce** | Tot de client + gestionar productes, esdeveniments, escanejar QR |
+| **client** | Veure events, comprar entrades, usar cartera digital |
+| **commerce** | Tot de client + gestionar events/entrades, escanejar QR, veure mapa de calor |
 | **admin** | Accés total al sistema |
 
 ---
@@ -249,8 +273,8 @@ Quan `STRIPE_SECRET_KEY` no està configurat o té el valor per defecte, l'aplic
 | 🍂 **Oct - Des 2025** | Anàlisi, disseny i prototips | ✅ Completat |
 | 🎄 **Nadal 2025** | Configuració del projecte i funcionalitats bàsiques | ✅ Completat |
 | 🌱 **Gen - Feb 2026** | Desenvolupament avançat, integració de pagaments | ✅ Completat |
-| 🧪 **Mar - Abr 2026** | Proves, optimització i millores | 🔄 En progrés |
-| 🎓 **Maig 2026** | Entrega final i defensa del projecte | ⏳ Pendent |
+| 🧪 **Mar - Abr 2026** | Proves, optimització i millores | ✅ Completat |
+| 🎓 **Maig 2026** | Entrega final i defensa del projecte | 🔄 En progrés |
 
 ---
 
@@ -276,46 +300,17 @@ Quan `STRIPE_SECRET_KEY` no està configurat o té el valor per defecte, l'aplic
 
 ---
 
-## � Documentació del Projecte - UD1A
-
-Documentació completa per a la primera fase del projecte intermodular:
-
-### 📋 Documents Principals
+## 📂 Documentació del Projecte - UD1A
 
 | Document | Descripció | Enllaç |
 |----------|------------|--------|
-| 📅 **Planificació** | Revisió i ajust de la planificació inicial. Estat del projecte, fites assolides i calendari ajustat | [docs/PLANIFICACIO.md](docs/PLANIFICACIO.md) |
-| 📘 **Memòria Tècnica** | Arquitectura del sistema, decisions tècniques, stack tecnològic i implementació detallada de funcionalitats | [docs/MEMORIA_TECNICA.md](docs/MEMORIA_TECNICA.md) |
-| 🚀 **Guia d'Instal·lació** | Guia pas a pas per instal·lar i configurar el projecte en local i producció | [docs/GUIA_INSTALLACIO.md](docs/GUIA_INSTALLACIO.md) |
-
-### 📖 Contingut de la Documentació
-
-**Planificació:**
-- Planificació inicial vs planificació real
-- Desviacions i ajustos aplicats
-- Estat actual del desenvolupament (07/02/2026)
-- Funcionalitats implementades: Home, Login, Backoffice
-- Calendari ajustat fins a maig 2026
-
-**Memòria Tècnica:**
-- Arquitectura de tres capes del sistema
-- Decisions arquitectòniques (Next.js App Router, Supabase BaaS)
-- Stack tecnològic complet
-- Disseny de base de dades (12 taules + RLS)
-- Implementació detallada de funcionalitats
-- Seguretat i desplegament
-
-**Guia d'Instal·lació:**
-- Requisits previs i verificació
-- Instal·lació local pas a pas
-- Configuració de Supabase amb migracions SQL
-- Configuració de Stripe (opcional)
-- Execució i desplegament
-- Solució de problemes comuns
+| 📅 **Planificació** | Revisió i ajust de la planificació inicial | [docs/PLANIFICACIO.md](docs/PLANIFICACIO.md) |
+| 📘 **Memòria Tècnica** | Arquitectura, decisions tècniques i implementació detallada | [docs/MEMORIA_TECNICA.md](docs/MEMORIA_TECNICA.md) |
+| 🚀 **Guia d'Instal·lació** | Guia pas a pas per instal·lar i configurar el projecte | [docs/GUIA_INSTALLACIO.md](docs/GUIA_INSTALLACIO.md) |
 
 ---
 
-## �📝 Llicència
+## 📝 Llicència
 
 Aquest projecte està sota la llicència MIT. Consulta l'arxiu [LICENSE](LICENSE) per a més detalls.
 
@@ -325,6 +320,6 @@ Aquest projecte està sota la llicència MIT. Consulta l'arxiu [LICENSE](LICENSE
 
 **Fet amb ❤️ a les Illes Balears**
 
-[Reportar un error](https://github.com/XiscoRossello/Kopeo/issues) · [Sol·licitar funcionalitat](https://github.com/XiscoRossello/Kopeo/issues)
+[Reportar un error](https://github.com/XiscoRossello/hotticket/issues) · [Sol·licitar funcionalitat](https://github.com/XiscoRossello/hotticket/issues)
 
 </div>

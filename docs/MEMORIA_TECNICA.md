@@ -1,6 +1,6 @@
 # 📘 Memòria Tècnica del Projecte - UD1A
 
-**Projecte:** Kopeo - Plataforma de Gestió de Tiquets de Begudes  
+**Projecte:** HotTicket - Plataforma de Gestió de Tiquets de Begudes  
 **Autors:** Francisco Javier Rosselló Jerónimo, Ferran Azpiazu Adrover  
 **Tutor:** Miquel Antoni Capellà Arrom  
 **Centre:** CIFP Francesc de Borja Moll  
@@ -26,7 +26,7 @@
 
 ### 1.1. Context del Projecte
 
-Kopeo és una aplicació web dissenyada per revolucionar la gestió de tiquets de begudes en l'àmbit de l'oci nocturn. El projecte resol el problema de les llargues cues a les barres mitjançant la compra anticipada de begudes amb pagament digital i generació de codis QR per al bescanvi.
+HotTicket és una aplicació web dissenyada per revolucionar la gestió de tiquets de begudes en l'àmbit de l'oci nocturn. El projecte resol el problema de les llargues cues a les barres mitjançant la compra anticipada de begudes amb pagament digital i generació de codis QR per al bescanvi.
 
 ### 1.2. Objectius de la UD1A
 
@@ -49,7 +49,7 @@ Aquest document descriu les decisions tècniques preses, l'arquitectura implemen
 
 ### 2.1. Arquitectura General
 
-Kopeo segueix una arquitectura de tres capes:
+HotTicket segueix una arquitectura de tres capes:
 
 ```
 ┌─────────────────────────────────────────┐
@@ -1282,7 +1282,7 @@ WITH CHECK (auth.uid() = id);
 
 ### 8.1. Estat Actual
 
-A data de 7 de febrer de 2026, el projecte Kopeo ha completat amb èxit la fase UD1A:
+A data de 7 de febrer de 2026, el projecte HotTicket ha completat amb èxit la fase UD1A:
 
 **Assolit:**
 ✅ Entorn de desenvolupament configurat i operatiu  
@@ -1383,7 +1383,7 @@ A data de 7 de febrer de 2026, el projecte Kopeo ha completat amb èxit la fase 
 
 ### 8.5. Valoració Personal
 
-El desenvolupament de Kopeo en aquesta primera fase ha estat un èxit. S'han complert tots els objectius de la UD1A i s'ha establert una base sòlida per al desenvolupament futur.
+El desenvolupament de HotTicket en aquesta primera fase ha estat un èxit. S'han complert tots els objectius de la UD1A i s'ha establert una base sòlida per al desenvolupament futur.
 
 Les funcionalitats implementades són operatives i demostren la viabilitat del projecte. L'arquitectura escollida permet escalar fàcilment a mesura que s'afegeixin noves funcionalitats.
 
@@ -1400,4 +1400,4 @@ Data: 7 de febrer de 2026
 
 ---
 
-*Aquest document forma part de la documentació tècnica del projecte Kopeo desenvolupat com a Projecte Intermodular al CIFP Francesc de Borja Moll durant el curs 2025-2026.*
+*Aquest document forma part de la documentació tècnica del projecte HotTicket desenvolupat com a Projecte Intermodular al CIFP Francesc de Borja Moll durant el curs 2025-2026.*

@@ -21,7 +21,6 @@ export default function HomePage() {
       .from('events')
       .select('*, commerce:commerces(name, logo_url)')
       .eq('is_active', true)
-      .gte('start_date', new Date(Date.now() - 86400000).toISOString())
       .order('start_date', { ascending: true })
 
     if (!error && data) {
@@ -39,7 +38,7 @@ export default function HomePage() {
     const { data, error } = await supabase.rpc('get_nearby_events', {
       user_lat: lat,
       user_lng: lng,
-      radius_km: 100,
+      radius_km: 9999,
     })
 
     if (error) {
@@ -53,41 +52,30 @@ export default function HomePage() {
   }, [supabase, loadAllEvents])
 
   useEffect(() => {
-    let cancelled = false
-    
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(
-        (position) => {
-          if (cancelled) return
-          setUserLocation({
-            lat: position.coords.latitude,
-            lng: position.coords.longitude,
-          })
-        },
-        () => {
-          if (cancelled) return
-          setLocationError('No pudimos obtener tu ubicación. Mostrando todos los eventos.')
-          loadAllEvents()
-        }
-      )
-    } else {
-      // Defer to avoid synchronous setState in effect body
-      const id = requestAnimationFrame(() => {
-        setLocationError('Geolocalización no soportada. Mostrando todos los eventos.')
-        loadAllEvents()
-      })
-      return () => { cancelled = true; cancelAnimationFrame(id) }
+    // Load all events immediately — no auth or geolocation required
+    loadAllEvents()
+
+    if (!navigator.geolocation) {
+      setLocationError('Geolocalización no soportada.')
+      return
     }
 
-    return () => { cancelled = true }
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        setUserLocation({
+          lat: position.coords.latitude,
+          lng: position.coords.longitude,
+        })
+      },
+      () => {
+        setLocationError('No pudimos obtener tu ubicación. Mostrando todos los eventos.')
+      }
+    )
   }, [loadAllEvents])
 
   useEffect(() => {
     if (userLocation) {
-      const id = requestAnimationFrame(() => {
-        loadNearbyEvents(userLocation.lat, userLocation.lng)
-      })
-      return () => cancelAnimationFrame(id)
+      loadNearbyEvents(userLocation.lat, userLocation.lng)
     }
   }, [userLocation, loadNearbyEvents])
 

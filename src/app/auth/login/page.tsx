@@ -3,9 +3,8 @@
 import { useState, Suspense, useEffect, useMemo } from 'react'
 import { useSearchParams } from 'next/navigation'
 import { createClient } from '@/lib/supabase/client'
-import { Mail, Lock, Loader2, Eye, EyeOff } from 'lucide-react'
+import { Mail, Lock, Loader2, Eye, EyeOff, Ticket } from 'lucide-react'
 import Link from 'next/link'
-import Image from 'next/image'
 
 function LoginForm() {
   const [email, setEmail] = useState('')
@@ -67,13 +66,9 @@ function LoginForm() {
       <div className="w-full max-w-sm space-y-8 animate-fade-in">
         {/* Logo */}
         <div className="text-center">
-          <Image
-            src="/logo-sin-fondo.png"
-            alt="HotTicket"
-            width={60}
-            height={60}
-            className="mx-auto"
-          />
+          <div className="w-16 h-16 mx-auto rounded-2xl gradient-primary flex items-center justify-center shadow-lg shadow-primary/20">
+            <Ticket className="text-white" size={32} />
+          </div>
           <h1 className="mt-4 text-2xl font-bold">Bienvenido a HotTicket</h1>
           <p className="text-gray-500 text-sm mt-1">Inicia sesión para continuar</p>
         </div>
