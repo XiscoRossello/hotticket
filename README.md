@@ -285,11 +285,6 @@ Pots utilitzar els següents comptes per provar l'aplicació sense necessitat de
     <td align="center">
       <strong>👨‍💻 Autors</strong><br/>
       Francisco Javier Rosselló Jerónimo<br/>
-      Ferran Azpiazu Adrover
-    </td>
-    <td align="center">
-      <strong>👨‍🏫 Tutor</strong><br/>
-      Miquel Antoni Capellà Arrom
     </td>
     <td align="center">
       <strong>🏫 Centre</strong><br/>
