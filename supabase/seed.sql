@@ -28,10 +28,10 @@ new_products AS (
     p.category,
     true
   FROM new_commerce nc
-  CROSS JOIN (VALUES 
-    ('Cerveza', 'Cerveza fría 33cl', 3.50, 'bebidas'),
-    ('Mojito', 'Mojito cubano', 7.00, 'cocteles'),
-    ('Agua', 'Agua mineral 50cl', 2.00, 'refrescos')
+  CROSS JOIN (VALUES
+    ('Entrada General', 'Acceso general al evento', 15.00, 'entradas'),
+    ('Entrada VIP', 'Acceso VIP con zona reservada', 35.00, 'entradas'),
+    ('Entrada Early Bird', 'Acceso anticipado a precio especial', 10.00, 'entradas')
   ) AS p(name, description, price, category)
   RETURNING id, commerce_id
 ),

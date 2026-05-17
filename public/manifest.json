@@ -1,23 +1,16 @@
 {
   "name": "HotTicket",
   "short_name": "HotTicket",
-  "description": "Compra bebidas en eventos con código QR",
+  "description": "Compra tus entradas para los mejores eventos con código QR",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0A0A0A",
-  "theme_color": "#8400D6",
+  "theme_color": "#E60023",
   "icons": [
     {
-      "src": "/icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "/icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any maskable"
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "purpose": "any"
     }
   ]
 }
