@@ -2,7 +2,7 @@
 
 # 🎟️ HotTicket
 
-### *Compra tu entrada, vive el momento*
+### *Compra la teva entrada, viu el moment*
 
 [![Estat](https://img.shields.io/badge/Estat-En%20Desenvolupament-yellow)](https://github.com/XiscoRossello/hotticket)
 [![Versió](https://img.shields.io/badge/Versió-1.0.0-blue)](https://github.com/XiscoRossello/hotticket)
